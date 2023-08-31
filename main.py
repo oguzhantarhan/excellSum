@@ -28,7 +28,7 @@ def write():
         print("Code:{} Return:{} Outgoing:{}".format(product[0],product[1],product[2]))
         
     ws.auto_filter.ref = ws.dimensions
-    ws=wb.create_sheet("STOK")
+    ws=wb.create_sheet("stock")
     ws.append(["Code","Stock","Total with return"])
     for product in stockData:
         index=search(product[0])
